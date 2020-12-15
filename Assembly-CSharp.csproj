@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{65A1F71B-6971-6A2F-FDC1-BEE1BC604015}</ProjectGuid>
+    <ProjectGuid>{B836515B-73C6-68C8-BEA9-467AE6BA54E5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,9 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Move.cs" />
-    <Compile Include="Assets\NewBehaviourScript.cs" />
-    <Compile Include="Assets\script.cs" />
+    <Compile Include="Assets\CameraRotateAround.cs" />
+    <Compile Include="Assets\mouse.cs" />
+    <Compile Include="Assets\mouserotate.cs" />
+    <Compile Include="Assets\move.cs" />
     <Reference Include="UnityEngine">
       <HintPath>S:/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -595,31 +596,31 @@
       <HintPath>S:/2019.4.11f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>S:/DA/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>S:/DA/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>S:/DA/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>S:/DA/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>S:/DA/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>S:/DA/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>S:/DA/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>S:/DA/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>S:/DA/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>S:/ezhe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

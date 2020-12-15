@@ -1,24 +1,27 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public class Move : MonoBehaviour
-{
-
-    public Transform sphere;
-    private Vector3 dist;
-    float rotY;
-    public float RotSpeed = 1.5f;
-
-    void Start()
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+    public class move : MonoBehaviour
     {
-        dist = transform.position - sphere.position;
-        rotY = transform.eulerAngles.y;
-    }
 
-    void Update()
-    {
-        rotY += Input.GetAxis("Horizontal") * RotSpeed;
-        transform.position = sphere.position - (Quaternion.Euler(0, rotY, 0) * dist);
-        transform.LookAt(sphere);
+        [SerializeField] private float speed = 1000.0f;
+
+
+        private CharacterController cc;
+
+        void Start()
+        {
+            cc = GetComponent<CharacterController>();
+        }
+
+        void FixedUpdate()
+        {
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
+
+            Vector2 input = new Vector2(horizontal, vertical);
+            Vector3 Move = transform.forward * input.y + transform.right * input.x;
+            Vector3 move = new Vector3(Move.x * speed, 0, Move.z * speed);
+            cc.Move(move * Time.fixedDeltaTime);
+        }
     }
-}
